@@ -5,8 +5,8 @@
 ## NAME:        frames.csh
 ##
 ## DESCRIPTION: This script is to be used for the Game of Life
-##              program for CS61C Fall 2020 project 1. 
-##              Students are asked to write gameOfLife that simply 
+##              program for CS61C Fall 2020 project 1.
+##              Students are asked to write gameOfLife that simply
 ##              generates the next frame, so this script is used to
 ##              generate a sequence of up to 90,000 frames.
 ##
@@ -60,7 +60,7 @@ cp $indir/$1.ppm $outdir/$1/$1_$2_10000.ppm
 while ($n < $max)
     @ np = $n + 1
     @ report = $np - 10000
-    if (-e $outdir/$1/$1_$2_$np.ppm) then    
+    if (-e $outdir/$1/$1_$2_$np.ppm) then
 		echo -n "[$report] "
 	else
 		echo -n "$report "
